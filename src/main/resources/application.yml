@@ -2,15 +2,15 @@ server:
   port: 8800
 spring:
   redis:
-    database: 1 #RedisÊı¾İ¿âË÷Òı[0,15]£¬Ä¬ÈÏ0
+    database: 1 #Redisæ•°æ®åº“ç´¢å¼•[0-15]ï¼Œé»˜è®¤0
     host: 127.0.0.1
     port: 6399
     jedis:
       pool:
-        max-active: 8 #Á¬½Ó³Ø×î´óÁ¬½ÓÊı
-        max-wait: -1 #Á¬½Ó³Ø×î´ó×èÈûÊ±¼ä(¸ºÖµ±íÊ¾Ã»ÓĞÏŞÖÆ)
-        max-idle: 8 #Á¬½Ó³ØÖĞ×î´ó¿ÕÏĞÁ¬½Ó
-        min-idle: 0 #Á¬½Ó³ØÖĞ×îĞ¡¿ÕÏĞÁ¬½Ó
-    timeout: 1000 #Á¬½Ó³¬Ê±Ê±¼ä
+        max-active: 8 #æœ€å¤§è¿æ¥æ•°
+        max-wait: -1 #æœ€å¤§ç­‰å¾…æ—¶é—´ï¼Œè´Ÿå€¼æ°¸ä¹…
+        max-idle: 8 #æœ€å¤§ç©ºé—²è¿æ¥
+        min-idle: 0 #æœ€å°ç©ºé—²è¿æ¥
+    timeout: 1000 #è¶…æ—¶æ—¶é—´
     password: thisispwd
 
