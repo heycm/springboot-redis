@@ -15,10 +15,10 @@ public class TestDemo {
 
     @Test
     public void m1() throws InterruptedException {
-//        redisUtil.set("key_1", "val_1");
-//        System.out.println(redisUtil.get("key_1"));
-//        redisUtil.expire("key_1", 5, TimeUnit.SECONDS);
-//        Thread.sleep(5000);
-//        System.out.println(redisUtil.get("key_1"));
+       redisUtil.set("key_1", "val_1");
+       System.out.println(redisUtil.get("key_1"));
+       redisUtil.expire("key_1", 5, TimeUnit.SECONDS);
+       Thread.sleep(5000);
+       System.out.println(redisUtil.get("key_1"));
     }
 }
